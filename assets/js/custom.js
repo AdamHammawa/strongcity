@@ -141,3 +141,18 @@
     });
   }
 })(window.jQuery);
+
+// Disable using Ctrl on web page
+
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey) {
+    event.preventDefault();
+  }
+  if (event.keyCode == 123) {
+    event.preventDefault();
+  }
+});
+
+// Disable right click
+
+document.addEventListener("contextmenu", (event) => event.preventDefault());
