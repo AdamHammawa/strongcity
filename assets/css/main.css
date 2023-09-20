@@ -324,6 +324,24 @@ a.main-button-slider:hover {
   background-color: #8261ee;
 }
 
+button.main-button-slider {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: purple;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button-slider:hover {
+  background-color: #8261ee;
+}
+
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
@@ -745,6 +763,38 @@ welcome
   }
 }
 
+
+#playVideoButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#videoContainer {
+  display: none; /* Hide the video container initially */
+}
+
+/* #welcome .btn-watch-video {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px 0 0 25px;
+  color: #fff;
+  line-height: 1;
+}
+#welcome .btn-watch-video i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+#welcome .btn-watch-video:hover i {
+  color: #47b2e4;
+} */
 
 /* 
 ---------------------------------------------

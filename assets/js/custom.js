@@ -156,3 +156,41 @@ document.addEventListener("keydown", function (event) {
 // Disable right click
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+//-------Video-Playing
+
+// Get references to the button and video container
+const playButton = document.getElementById("playVideoButton");
+const videoContainer = document.getElementById("videoContainer");
+
+// Function to open and play the video
+function playVideo() {
+  // Create a video element
+  const video = document.createElement("video");
+  video.src = "assets/video.mp4"; // Replace with the path to your video file
+  video.controls = true; // Show video controls (play, pause, etc.)
+  video.autoplay = true; // Automatically start playing the video
+
+  // Append the video element to the video container
+  videoContainer.appendChild(video);
+
+  // Hide the button
+  playButton.style.display = "none";
+}
+
+// Attach the click event listener to the button
+playButton.addEventListener("click", playVideo);
+
+/**
+ * Initiate  glightbox
+ */
+const glightbox = GLightbox({
+  selector: ".glightbox",
+});
+
+/**
+ * Initiate portfolio lightbox
+ */
+const portfolioLightbox = GLightbox({
+  selector: ".portfolio-lightbox",
+});
